@@ -1,0 +1,337 @@
+*{
+    font-family: Arial;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+
+}
+
+img{
+    width: 100%;
+}
+
+.section-title{
+    text-align: center;
+    color: #000;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.section-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    background: #f3961c;
+    margin: 10px auto 0;
+    border-radius: 8px;
+    background: #f39613;
+}
+
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: #3b141c;
+}
+
+header .navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar .nav-logo .logo-text{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-link .nav-menu{
+    padding: 10px 18px;
+    color: #fff;
+    background: #f3961c;
+    border-radius:30px;
+    font-size: 1.12rem ;
+    transition: 0.3s ease;
+}
+
+
+.navbar .nav-menu .nav-link:hover{
+    color:#3b141c;
+    background-color: #f3961c;
+
+}
+
+.navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: #3b141c;
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    justify-content:space-between;
+}
+.hero-section .hero-details .title{
+    font-size: 2.3rem;
+    color: #f39613;
+    font-family: Arial;
+}
+.hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero-section .hero-details .description{
+    max-width: 70%;
+    font-size: 1.12 rem;
+    margin: 24px 0px 40px;
+    
+}
+
+.hero-section .hero-details .buttons{
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: #3b141c;
+    border-radius:30px;
+    background: #f39613;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.hero-section .hero-details .button:hover ,
+.hero-section .hero-details .contact-us{
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+.hero-section .hero-details .contact-us:hover{
+    color: #3b141c;
+    border-color: #f3961c;
+    background: #f3961c;
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+.about-section{
+    padding: 120px 0;
+    background: #faf4f5;
+}
+
+.about-section .section-content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-section .about-details .section-title{
+    padding: 0;
+}
+.about-section .about-details{
+    max-width: 50%;
+
+}
+
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: 1.12rem;
+
+}
+
+.about-section .about-details .social-link-list{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link{
+    color: #3b141c;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+.text {
+    color: #000;
+}
+.fa-brands {
+    color: #000;
+}
+
+.social-link-list{
+    color: #000;
+}
+
+.about-section .social-link-list .social-link:hover{
+    color: #f3961c;
+}
+
+
+/* ----------------------------------------------- */
+
+
+.movie-division{
+    display: grid;
+    row-gap: 10px;
+    column-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.movie-image{
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.search-bar{
+    display: block;
+
+}
+
+/* ------------------------------------ */
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+        font-size:1.3rem;
+
+    }
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+
+    }
+    .navbar #menu-close-button{
+        color: #252525;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    /* .navbar #menu-open-button{
+        
+    } */
+
+
+    .navbar .nav-menu{
+        display: block;
+        position: fixed;
+        background: #fff;
+        left: -300px;
+        top: 0;
+        width:300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        height: 100%;
+        transition: left 0.2s ease;
+    }
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+
+    }
+    .navbar .nav-menu .nav-link{
+        color: #252525;
+        display: block;
+        margin-top: 17px;
+        font-size:1.3rem;
+    }
+    .hero-section .section-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 20px 20px;
+        gap: 50px;
+    }
+    .hero-section .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+    }
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details{
+        max-width: 100%;
+    }
+     .hero-section .hero-details .buttons{
+        justify-content: center;
+
+     }
+
+     .about-section .section-content{
+        gap: 70px;
+        flex-direction: column;
+     }
+     .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+
+     }
+
+}
