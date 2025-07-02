@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Styles/login-signup-styles.css">
-        <title>Add Movies</title>
-    </head>
-    <body>
-        <div class="forms">
-            <h1>Add Movies</h1>
-            <form name="form" enctype="multipart/form-data" backend-url="http://localhost/cinema-booking-backend/Controllers/insert_movies.php" page_name="Add_movies" id="outside_form" method="POST">
-                <label>title: </label>
-                <input type="text" class="user" placeholder="title" name="title">
-                <br><br>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="../Styles/Movies.css" />
+</head>
+<body>
+  <div class="movie-details">
+    <h1 id="title">Loading...</h1>
+    <img id="movie-poster" src="" alt="Movie Poster" style="max-width: 300px;" />
+    <p id="movie-description"></p>
+    
+    <p><strong>Genre:</strong> <span id="genre"></span></p>
+    <p><strong>Director:</strong> <span id="director"></span></p>
+    <p><strong>Cast:</strong> <span id="actors"></span></p>
+    <p><strong>Duration:</strong> <span id="duration_minutes"></span> minutes</p>
+    <p><strong>Release Date:</strong> <span id="release_date"></span></p>
+    <p><strong>Rating:</strong> <span id="rating"></span></p>
+    <p><strong>Language:</strong> <span id="language"></span></p>
 
-                <label>description: </label>
-                <textarea type="text" placeholder="Description" name="description"></textarea>
-                <br><br>
-                <label>Genre: </label>
-                <input Type="text" class="user" placeholder="Genre" name="genre">
-                <br><br>
-                <label>Duration Minutes: </label>
-                <input type="number"  placeholder="duration minutes" name="duration_minutes">
-                <br><br>
-                <label>Release Date: </label>
-                <input type="date"  placeholder="Release Date" name="release_date">
-                <br><br>
-                <label>Showtimes: </label>
-                <input type="text" name="showtime" placeholder="e.g. 10:00, 13:30, 17:00">
-                <br><br>
-                <label>Rating: </label>
-                <input type="text"  placeholder="Rating" name="rating">
-                <br><br>
-                <label>language: </label>
-                <input type="text"  placeholder="language" name="language">
-                <br><br>
-                <label>Image url: </label>
-                <input type="file" name="poster_url" accept="image/*">
-                <br><br>
-                <label>Trailer url: </label>
-                <input type="text"  placeholder="Trailer url" name="trailer_url">
-                <br><br>
-                <label>Director: </label>
-                <input type="text"  placeholder="Director" name="director">
-                <br><br>
-                <label>Cast: </label>
-                <input type="text"  placeholder="Cast" name="actors">
-                <br><br>
+    <a id="trailer_url" class="button_movie" href="#" target="_blank">Watch Trailer</a>
+    <a  class="button_movie" href="Book_ticket.html" target="_blank">Book Ticket</a>
+  </div>
 
-
-                
-                
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </div>
-    </body>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="module" src="../Scripts/SignUp.js" defer></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../Scripts/Movies_with_description.js"></script> <!-- Make sure this file has the JS you showed earlier -->
+</body>
 </html>
