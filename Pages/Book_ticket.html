@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Ticket</title>
+  <link rel="stylesheet" href="../Styles/booking_ticket.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Ticket</h1>
+    <form id="booking-form" action="#" method="POST" enctype="multipart/form-data">
+      <!-- Movie (pre-filled from query param) -->
+      <div class="form-group">
+        <label for="movie-title">Movie</label>
+        <input type="text" id="movie-title" name="title" readonly />
+      </div>
+
+      <!-- Showtime selector -->
+      <div class="form-group">
+        <label for="showtime">Showtime</label>
+        <select id="showtime" name="showtime">
+          <!-- Options will be injected here -->
+        </select>
+      </div>
+
+      <!-- User info -->
+      <div class="form-group">
+        <label for="customer-name">Your Name</label>
+        <input type="text" id="customer-name" name="customer_name" required placeholder="Full Name" />
+      </div>
+      <div class="form-group">
+        <label for="customer-email">Email Address</label>
+        <input type="email" id="customer-email" name="customer_email" required placeholder="you@example.com" />
+      </div>
+
+      <!-- Seat layout legend -->
+      <div class="legend">
+        <span class="legend-item"><span class="seat available"></span> Available</span>
+        <span class="legend-item"><span class="seat selected"></span> Selected</span>
+      </div>
+
+      <!-- Seat layout grid -->
+      <div class="seats" id="seat-map">
+        <!-- Rows A–D, seats 1–8 -->
+        <!-- Example for Row A -->
+        <div class="seat"><input type="checkbox" id="A1" name="seats[]" value="A1" /><label for="A1">A1</label></div>
+        <div class="seat"><input type="checkbox" id="A2" name="seats[]" value="A2" /><label for="A2">A2</label></div>
+        <div class="seat"><input type="checkbox" id="A3" name="seats[]" value="A3" /><label for="A3">A3</label></div>
+        <div class="seat"><input type="checkbox" id="A4" name="seats[]" value="A4" /><label for="A4">A4</label></div>
+        <div class="seat"><input type="checkbox" id="A5" name="seats[]" value="A5" /><label for="A5">A5</label></div>
+        <div class="seat"><input type="checkbox" id="A6" name="seats[]" value="A6" /><label for="A6">A6</label></div>
+        <div class="seat"><input type="checkbox" id="A7" name="seats[]" value="A7" /><label for="A7">A7</label></div>
+        <div class="seat"><input type="checkbox" id="A8" name="seats[]" value="A8" /><label for="A8">A8</label></div>
+        <!-- Repeat similar blocks for Rows B, C, D as needed -->
+      </div>
+
+      <!-- Submit -->
+      <div class="form-group">
+        <button type="submit" class="btn">Confirm Booking</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
