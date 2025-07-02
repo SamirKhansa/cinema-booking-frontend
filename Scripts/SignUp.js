@@ -6,8 +6,9 @@
 async function sendData(urls) {
   const formData=new FormData(form);
   const response={};
-  if(item["conf-pass"]!=item["password"]){
+  if (formData.get("conf-pass") !== formData.get("password")) {
     alert("Password and Confirm password are not equal");
+    return; 
   }
   for (const item of formData){
     if(item[0]!="conf-pass"){
