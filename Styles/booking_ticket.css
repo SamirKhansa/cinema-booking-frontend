@@ -1,0 +1,144 @@
+/* Styles/booking.css */
+
+body {
+    background-image: url("../Assets/2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid rgb(82, 11, 77);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[readonly] {
+  background-color: #e9ecef;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-item .seat {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.legend-item .available {
+  background: #eee;
+}
+
+.legend-item .selected {
+  background: rgb(82, 11, 77);
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.seat {
+  position: relative;
+  cursor: pointer;
+}
+
+.seat input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.seat label {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  background: #eee;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 0;
+  font-size: 0.8rem;
+  color: #333;
+  position: relative;
+}
+
+.seat input:checked + label {
+  background: rgb(82, 11, 77);
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: rgb(82, 11, 77);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: rgb(82, 11, 77);
+}
+
+@media (max-width: 500px) {
+  .seats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
