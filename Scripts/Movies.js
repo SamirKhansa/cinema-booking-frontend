@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   axios.get('http://localhost/cinema-booking-backend/Controllers/get_movies.php')
     .then(response => {
       const movies = response.data;
-      movieDivision.innerHTML = ''; // clear existing
+      movieDivision.innerHTML = ''; 
 
       movies.forEach(movie => {
         const img = document.createElement('img');
@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = imagePath + movie.poster_url;
         img.alt = movie.title;
         movieDivision.appendChild(img);
+        img.addEventListener('click', () => {
+        window.location.href = `Pages/add_movies.html?title=${encodeURIComponent(movie.title)}`;
+        });
       });
     })
     .catch(err => console.error('Error loading movies:', err));
