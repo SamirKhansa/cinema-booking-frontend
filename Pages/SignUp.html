@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta character="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Styles/login-signup-styles.css">
+        <title>SignIn</title>
+    </head>
+    <body>
+        <div class="forms">
+            <h1>Sign Up</h1>
+            <form name="form" backend-url="http://localhost/cinema-booking-backend/Controllers/SignIn.php" page_name="SignUp" id="outside_form" class="form">
+                <label>Name: </label>
+                <input type="text" class="name" placeholder="Full Name" name="name">
+                <br><br>
+                <label>Email: </label>
+                <input type="email" class="email" placeholder="example@email.com" name="email">
+                <br><br>
+                <label>Phone Number: </label>
+                <input type="tel" class="phone-number"  name="phone_number">
+                <br><br>
+                <label>Date of Birth: </label>
+                <input type="date" class="Date-of-birth" name="date_of_birth">
+                <br><br>
+                 <label>Favorite Genres: </label>
+                 <div class="genre-wrapper">
+                <label class="genre-option">
+                    <input type="checkbox" name="favorite_genres" value="Action"> Action
+                </label>
+                <label class="genre-option">
+                    <input type="checkbox" name="favorite_genres" value="Comedy"> Comedy
+                </label>
+                <label class="genre-option">
+                    <input type="checkbox" name="favorite_genres" value="Drama"> Drama
+                </label>
+                <label class="genre-option">
+                    <input type="checkbox" name="favorite_genres" value="Horror"> Horror
+                </label>
+                </div>
+                <br><br>
+                <label>Password: </label>
+                <input type="password" class="pass" placeholder="password" name="password">
+                <br><br>
+                <label>Confirm Password: </label>
+                <input type="password" class="conf-pass" placeholder="Confirm Password" name="conf-pass">
+                <br><br>
+                <button type="submit" class="btn">SignIn</button>
+
+                
+            </form>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../Scripts/SignUp.js" defer></script>
+</html>

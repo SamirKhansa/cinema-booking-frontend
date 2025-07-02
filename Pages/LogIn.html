@@ -8,17 +8,20 @@
         <title>LogIn</title>
     </head>
     <body>
-        <div class="form">
+        <div class="forms">
             <h1>Login Form</h1>
-            <form name="form" method="POST">
-                <label>Username: </label>
-                <input type="text" class="user" name="user">
+            <form name="form" backend-url="http://localhost/cinema-booking-backend/Controllers/LogIn.php" page_name="LogIn" id="outside_form" method="POST">
+                <label>Email: </label>
+                <input type="email" class="user" placeholder="example@email.com" name="email">
                 <br><br>
                 <label>Password: </label>
-                <input type="password" class="pass" name="pass">
+                <input type="password" class="pass" name="password">
                 <br><br>
-                <input type="button" class="btn" value="Login" name="submit"> 
+                <button type="submit" class="btn">LogIn</button>
+                <button type="button" class="btn" onclick="window.location.href='SignUp.html'">SignIn</button>
             </form>
         </div>
     </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../Scripts/SignUp.js" defer></script>
 </html>

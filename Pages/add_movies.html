@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Styles/login-signup-styles.css">
+        <title>Add Movies</title>
+    </head>
+    <body>
+        <div class="forms">
+            <h1>Add Movies</h1>
+            <form name="form" enctype="multipart/form-data" backend-url="http://localhost/cinema-booking-backend/Controllers/insert_movies.php" page_name="Add_movies" id="outside_form" method="POST">
+                <label>title: </label>
+                <input type="text" class="user" placeholder="title" name="title">
+                <br><br>
+
+                <label>description: </label>
+                <textarea type="text" placeholder="Description" name="description"></textarea>
+                <br><br>
+                <label>Genre: </label>
+                <input Type="text" class="user" placeholder="Genre" name="genre">
+                <br><br>
+                <label>Duration Minutes: </label>
+                <input type="number"  placeholder="duration minutes" name="duration_minutes">
+                <br><br>
+                <label>Release Date: </label>
+                <input type="date"  placeholder="Release Date" name="release_date">
+                <br><br>
+                <label>Showtimes: </label>
+                <input type="text" name="showtime" placeholder="e.g. 10:00, 13:30, 17:00">
+                <br><br>
+                <label>Rating: </label>
+                <input type="text"  placeholder="Rating" name="rating">
+                <br><br>
+                <label>language: </label>
+                <input type="text"  placeholder="language" name="language">
+                <br><br>
+                <label>Image url: </label>
+                <input type="file" name="poster_url" accept="image/*">
+                <br><br>
+                <label>Trailer url: </label>
+                <input type="text"  placeholder="Trailer url" name="trailer_url">
+                <br><br>
+                <label>Director: </label>
+                <input type="text"  placeholder="Director" name="director">
+                <br><br>
+                <label>Cast: </label>
+                <input type="text"  placeholder="Cast" name="actors">
+                <br><br>
+
+
+                
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../Scripts/SignUp.js" defer></script>
+</html>

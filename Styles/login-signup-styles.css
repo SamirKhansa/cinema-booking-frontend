@@ -5,7 +5,7 @@ body{
     background-position: top;
     background-size: cover;
 }
-.form{
+.forms{
     background-color: white;
     width: 25%;
     margin: 120px auto;
@@ -16,14 +16,23 @@ body{
 
 .btn{
     color: white;
-    background-color: rgb(105, 15, 190);
+    background-color: #3b141c;
     padding: 10px;
     font-size: large;
     border-radius: 10px;
 }
 
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.btn:active{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 @media screen and (max-width:700px) {
-    .form{
+    .forms{
         width: 65%;
         padding: 40px;
     }
