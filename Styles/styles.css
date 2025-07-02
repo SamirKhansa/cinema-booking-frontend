@@ -1,6 +1,5 @@
 *{
     font-family: Arial;
-    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,9 +63,13 @@ header .navbar{
     justify-content: space-between;
     
 }
-
+.nav-link{
+    color: white;
+}
+.logo-text{
+    color: white;
+}
 .navbar .nav-logo .logo-text{
-    color: #fff;
     font-size: 2rem;
     font-weight: 600;
     
