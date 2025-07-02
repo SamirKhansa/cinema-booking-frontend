@@ -1,0 +1,76 @@
+/* Styles/Movies.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../Assets/2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.movie-details {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.movie-details h1 {
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  color: #222;
+  text-align: center;
+}
+
+.movie-details img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.movie-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+.movie-details p strong {
+  color: #555;
+  width: 110px;
+  display: inline-block;
+}
+
+a.button_movie{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+ a.button_movie:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .movie-details {
+    padding: 20px;
+  }
+
+  .movie-details h1 {
+    font-size: 2rem;
+  }
+}
