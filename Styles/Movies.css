@@ -2,11 +2,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("../Assets/2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-color: #3b141c;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -53,7 +49,7 @@ a.button_movie{
   display: inline-block;
   margin-top: 30px;
   padding: 12px 28px;
-  background: #007bff;
+  background: #3b141c;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -62,7 +58,7 @@ a.button_movie{
 }
 
  a.button_movie:hover {
-  background: #0056b3;
+  opacity: 0.7;
 }
 
 @media (max-width: 600px) {
