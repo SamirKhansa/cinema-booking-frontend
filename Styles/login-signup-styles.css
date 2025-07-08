@@ -1,9 +1,11 @@
 body{
-    background-image: url("../Assets/2.jpg");
+    /* background-image: url("../Assets/2.jpg"); */
+    background-color: #3b141c;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    
 }
 .forms{
     background-color: white;
@@ -21,7 +23,19 @@ body{
     font-size: large;
     border-radius: 10px;
 }
+.btn2{
+    color: white;
+    background-color: #3b141c;
+    padding: 9px;
+    margin-left: 5%;
+    font-size: large;
+    border-radius: 10px;
+}
 
+.btn2:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
 .btn:hover{
     cursor: pointer;
     opacity: 0.9;
@@ -29,6 +43,39 @@ body{
 .btn:active{
     cursor: pointer;
     opacity: 0.5;
+}
+
+
+
+form h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+form input,
+form textarea {
+    
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
 }
 
 @media screen and (max-width:700px) {
