@@ -1,12 +1,17 @@
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const movieDivision = document.querySelector('.movie-division');
   const imagePath = 'Assets/';  
 
-  axios.get('http://localhost/cinema-booking-backend/Controllers/get_movies.php')
+  axios.get('http://localhost/cinema-booking-backend/AllMovies')
     .then(response => {
       const movies = response.data;
+      console.log('Response:', response.data);
       movieDivision.innerHTML = ''; 
-
       movies.forEach(movie => {
         const img = document.createElement('img');
         img.className = 'movie-image';
