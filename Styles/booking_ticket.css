@@ -1,13 +1,9 @@
 /* Styles/booking.css */
 
 body {
-    background-image: url("../Assets/2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    
+     background-color: #3b141c;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
@@ -124,7 +120,7 @@ input[readonly] {
 .btn {
   width: 100%;
   padding: 12px;
-  background: rgb(82, 11, 77);
+  background: #3b141c;
   color: #fff;
   border: none;
   border-radius: 6px;
