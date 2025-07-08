@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #3b141c;
 }
 
 
@@ -25,7 +26,7 @@ img{
 
 .section-title{
     text-align: center;
-    color: #000;
+    color: #ffffff;
     padding: 60px 0 100px;
     text-transform: uppercase;
     font-size: 2rem;
@@ -53,7 +54,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 5;
-    background: #3b141c;
+    /* background: #3b141c; */
 }
 
 header .navbar{
@@ -98,11 +99,12 @@ header .navbar{
 
 .navbar :where(#menu-close-button, #menu-open-button){
     display: none;
+    color: white;
 }
 
 .hero-section{
     min-height: 100vh;
-    background: #3b141c;
+    /* background: #3b141c; */
 }
 
 .hero-section .section-content{
@@ -164,7 +166,7 @@ header .navbar{
 
 .about-section{
     padding: 120px 0;
-    background: #faf4f5;
+    /* background: #3b141c; */
 }
 
 .about-section .section-content{
@@ -208,10 +210,10 @@ header .navbar{
     transition: 0.2s ease;
 }
 .text {
-    color: #000;
+    color: #ffffff;
 }
 .fa-brands {
-    color: #000;
+    color: #ffffff;
 }
 
 .social-link-list{
@@ -227,6 +229,7 @@ header .navbar{
 
 
 .movie-division{
+    background-color: #3b141c;
     display: grid;
     row-gap: 10px;
     column-gap: 12px;
@@ -268,7 +271,7 @@ header .navbar{
         height: 100%;
         width: 100%;
         backdrop-filter: blur(5px);
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.2);
 
     }
     .navbar #menu-close-button{
@@ -285,7 +288,7 @@ header .navbar{
     .navbar .nav-menu{
         display: block;
         position: fixed;
-        background: #fff;
+        background: #3b141c;
         left: -300px;
         top: 0;
         width:300px;
@@ -301,7 +304,7 @@ header .navbar{
 
     }
     .navbar .nav-menu .nav-link{
-        color: #252525;
+        color: #f9f9f9;
         display: block;
         margin-top: 17px;
         font-size:1.3rem;
